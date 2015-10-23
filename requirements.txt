@@ -13,3 +13,4 @@ tweepy==3.4.0
 twitter-monitor==0.3.0
 wheel==0.24.0
 whitenoise==2.0.4
+psycopg2==2.4.4
