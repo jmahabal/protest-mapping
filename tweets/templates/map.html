@@ -206,7 +206,7 @@
         for (var i = data.tweets.length - 1; i >= 0; i--) {
             if (data.tweets[i].lat != null){
                 //console.log(data.tweets[i]);
-                togeojson = togeojson+'{ "type": "Feature", "properties": { "latitude": '+data.tweets[i].lon+', "longitude": '+data.tweets[i].lat+', "time": '+(data.tweets.length - i)+', "id": "route1", "name":"'+data.tweets[i].text+'" }, "geometry": { "type": "Point", "coordinates": [ '+data.tweets[i].lon+', '+data.tweets[i].lat+' ] } },';
+                togeojson = togeojson+'{ "type": "Feature", "properties": { "latitude": '+data.tweets[i].lon+', "longitude": '+data.tweets[i].lat+', "time": '+(data.tweets.length - i)+', "tweetid": '+(data.tweets[i].id)+', "id": "route1", "name":"'+data.tweets[i].text+'" }, "geometry": { "type": "Point", "coordinates": [ '+data.tweets[i].lon+', '+data.tweets[i].lat+' ] } },';
             };
         };
         togeojson = togeojson.slice(0, togeojson.length-1);
