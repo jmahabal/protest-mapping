@@ -44,8 +44,7 @@ class TweetsJSON(TemplateView, JSONResponseMixin):
 			attributes['lat'] = tweet.latitude
 			attributes['lon'] = tweet.longitude
 			attributes['text'] = tweet.text
-            print tweet.tweet_id
-			attributes['tweetid'] = tweet.tweet_id
+			attributes['tweetid'] = str(tweet.tweet_id)
 			tweets.append(attributes)
 		data = {}
 		data['tweets'] = tweets
