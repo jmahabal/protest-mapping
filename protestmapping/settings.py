@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -79,10 +80,7 @@ WSGI_APPLICATION = 'protestmapping.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
 
-DATABASES['default']['ENGINE'] = 'django_postgrespool'
 
 DATABASES = {
     'default': {
@@ -90,6 +88,11 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+
+DATABASES['default'] =  dj_database_url.config()
+
+DATABASES['default']['ENGINE'] = 'django_postgrespool'
 
 # Logging
 
