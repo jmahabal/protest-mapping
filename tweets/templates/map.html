@@ -329,7 +329,7 @@
         function updateTweet(tweetinfo) {
             console.log(tweetinfo);
             twttr.widgets.createTweet(
-              "20",
+              tweetinfo.toString(),
               document.getElementById('tweettext')
             );
             // console.log(tweetinfo);
