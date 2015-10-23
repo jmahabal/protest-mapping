@@ -1,1 +1,1 @@
-web: gunicorn protestmapping.wsgi
+web: gunicorn protestmapping.wsgi --log-file -
