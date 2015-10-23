@@ -1,4 +1,5 @@
 dj-database-url==0.3.0
+dj-static==0.0.6
 Django==1.7.5
 django-bootstrap3==6.2.2
 django-jsonview==0.4.3
@@ -11,6 +12,7 @@ requests==2.8.1
 requests-oauthlib==0.5.0
 six==1.10.0
 SQLAlchemy==1.0.9
+static3==0.6.1
 swapper==0.1.1
 tweepy==3.4.0
 twitter-monitor==0.3.0
