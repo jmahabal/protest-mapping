@@ -328,8 +328,10 @@
 
         function updateTweet(tweetinfo) {
             console.log(tweetinfo);
+            var textint = 20;
             twttr.widgets.createTweet(
-              tweetinfo.toString(),
+                textint.toString(),
+              // tweetinfo.toString(),
               document.getElementById('tweettext')
             );
             // console.log(tweetinfo);
