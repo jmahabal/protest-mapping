@@ -1,5 +1,15 @@
 dj-database-url==0.3.0
-Django==1.8.5
+Django==1.7.5
+django-bootstrap3==6.2.2
+django-jsonview==0.4.3
+-e git+https://github.com/michaelbrooks/django-twitter-stream.git@c0285e1663f26a3e845a11131a4ebe4ec9e9d9e6#egg=django_twitter_stream-master
 gunicorn==19.3.0
+oauthlib==1.0.3
+requests==2.8.1
+requests-oauthlib==0.5.0
+six==1.10.0
+swapper==0.1.1
+tweepy==3.4.0
+twitter-monitor==0.3.0
 wheel==0.24.0
 whitenoise==2.0.4
